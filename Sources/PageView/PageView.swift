@@ -53,9 +53,6 @@ public struct PageView<Content>: View where Content: View {
                     currentFloatIndex = CGFloat(value)
                 }
             }
-            .onDataChange(of: self.translation) { newValue in
-                debugPrint(newValue)
-            }
         }
     }
     
